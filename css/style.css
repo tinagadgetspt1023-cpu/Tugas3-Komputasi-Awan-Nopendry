@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #263238;
+    line-height: 1.7;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Navbar */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #176b87;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #455a64;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #176b87;
+}
+
+/* Beranda */
+.hero {
+    background: linear-gradient(135deg, #176b87, #64ccc5);
+    color: white;
+    padding: 85px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    background-color: #176b87;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #176b87;
+}
+
+.btn:hover {
+    background-color: #0e4f68;
+    color: white;
+}
+
+/* Identitas */
+.identitas {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.identitas h2 {
+    margin-bottom: 20px;
+}
+
+.identity-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.identity-card p {
+    margin: 7px 0;
+}
+
+/* Judul halaman */
+.page-title {
+    background-color: #176b87;
+    color: white;
+    text-align: center;
+    padding: 55px 15px;
+}
+
+.page-title h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+/* Konten materi dan portofolio */
+.content {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.content-card,
+.portfolio-card {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.content-card h2 {
+    color: #176b87;
+    margin-bottom: 15px;
+}
+
+.content-card h3 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.content-card p {
+    margin-bottom: 12px;
+}
+
+.content-card ul {
+    padding-left: 25px;
+}
+
+/* Portofolio */
+.portfolio-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.portfolio-number {
+    background-color: #d9f2f1;
+    color: #176b87;
+    min-width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.portfolio-card h2 {
+    color: #176b87;
+    margin-bottom: 8px;
+}
+
+.portfolio-card p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #123c4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px 0;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .page-title h1 {
+        font-size: 28px;
+    }
+
+    .portfolio-card {
+        flex-direction: column;
+    }
+}
